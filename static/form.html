@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+    <head>
+        <title>AES</title>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="../static/main.css">
+	</head>
+
+	<body align=center onload="myFunction()" >
+		<div class="row">
+			<div class="col-md-3"></div>
+			<div class="col-md-6" ><h1 class="heading">ADVANCED ENCRYPTION STANDARD</h1></div>
+			<div class="col-md-3"></div>
+		</div>
+			<br>
+			<div class="row">
+			<div class="col-md-8">
+				<form class="form-horizontal" action=""  method="post">
+					<div class="form-group">
+						<label class="control-label col-xs-3" for="var_1" id="inputs">Plaintext-</label>
+						<div class="col-xs-7">
+							<input type="text" class="form-control" id="inp1" name="var_1"placeholder="Please enter a valid text" minlength="47" maxlength="47" required >
+						</div>
+                    </div>
+                    <div class="form-group">
+						<label class="control-label col-xs-3" for="var_2" id="inputs">key - </label>
+						<div class="col-xs-7">
+							<input type="text" class="form-control" id="inp2" name="var_2"placeholder="Please enter a valid text" minlength="47" maxlength="47" required>
+						</div>
+					</div>
+				<div class="form-group">
+						<label class="control-label col-xs-3" for="var_3" id="inputs">encrypted text - </label>
+						<div class="col-xs-7">
+							<textarea type="text" class="form-control" id="inp3"
+							name="var_3" placeholder="Result will be displayed here"></textarea>
+						</div>
+					</div>
+				
+
+					<div class="form-group">
+            			<div class="col-xs-offset-3 col-xs-9">
+                			<input type="submit"  name="submit_button" class="btn btn-primary" value="Encryption" id="button">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<input type="submit"  name="submit_button" class="btn btn-primary" value="Decryption" id="button">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                			<input type="reset" class="btn btn-danger" value="Reset" id="button">
+            			</div>
+        			</div>
+        		</form>
+        	</div>
+        	<div class="col-md-4"></div>
+		</div>
+		</div>
+	</body>
+</html>
+
+<script>
+	var texta = document.getElementById("inp1");
+	var textb = document.getElementById("inp2");
+	const textc = document.getElementById("inp3");
+	
+	var i = '{{inp}}';
+	var j = '{{entry}}'
+	var k = '{{entry1}}'
+	function myFunction() {
+		texta.value = i;
+		textb.value = j;
+		textc.value = k;
+	}
+</script>
