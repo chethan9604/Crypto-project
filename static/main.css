@@ -1,0 +1,37 @@
+body {
+  background-repeat: repeat, no-repeat;
+  background-color:bisque;
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+
+.heading{
+  color: red;
+  font-weight: 600;
+  font-family: italic;
+}
+
+#inputs{
+  color:  black;
+  font-size: medium;
+  float: left;
+  font-family: italic;
+}
+
+#button{
+  font-weight: 600;
+  color: whitesmoke;
+}
+
+#inp1,#inp2,#inp3,#inp4,#inp5{
+  border: darkred;
+  height: 50px;
+  width: 500px;
+  font-weight: 800;
+  color: black;
+}
+
+input[type=number] {
+  border: 2px solid red;
+  border-radius: 4px;
+}
