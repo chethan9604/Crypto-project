@@ -33,6 +33,7 @@ key schedule. AES requires a separate 128-bit round key block for each
 round plus one more
 
 Steps involved in Key expansion:
+
 1.One-byte circular left shift
 
 2. byte substitution using forward S-box
@@ -43,4 +44,5 @@ Keying restrictions:
 No weak or semi-weak keys have been identified for AES algorithm and there is 
 
 no restriction for key selection. 
+
 
