@@ -17,21 +17,30 @@ protection
 Initial round key addition
 ADD round key-each byte of the state is combined with a byte of the round 
 key using bitwise xor
+
 • SUB BYTES: a non-linear substitution step where each byte is replaced with 
 another according to a lookup table
+
 • Shift-rows: a transposition step where the last three rows of the state are 
 shifted cyclically certain number of steps
+
 • Mix columns- a linear mixing operation which operates on the columns of 
 the state combining the four bytes in each column which is done by Galois 
 multiplication.
+
 • Key expansion: Round keys are derived from the cipher key using the AES 
 key schedule. AES requires a separate 128-bit round key block for each 
 round plus one more
+
 Steps involved in Key expansion:
 1.One-byte circular left shift
+
 2. byte substitution using forward S-box
+
 3.XOR with Round constant
 Keying restrictions:
+
 No weak or semi-weak keys have been identified for AES algorithm and there is 
+
 no restriction for key selection. 
 
